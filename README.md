@@ -1,5 +1,28 @@
 # Cod-ai
 
+This repository contains two projects:
+
+1. **[Cod-ai CLI](#cod-ai)** — a minimal command-line AI coding assistant powered by Claude
+2. **[MOOC Platform](docs/mooc-platform.md)** — an Arabic-first open-course platform aligned
+   with Saudi Arabia's National eLearning Center (NELC) Excellence Standards
+
+## MOOC Platform quick start
+
+```bash
+pip install -e .
+python -m mooc --seed --reload
+# open http://127.0.0.1:8000
+```
+
+See **[docs/mooc-platform.md](docs/mooc-platform.md)** for the full reference,
+including the NELC taxonomy (8 domains / 43 subdomains / 339 criteria),
+the student / teacher / admin portals, lesson types, assessment engine, and
+the course quality-review workflow.
+
+---
+
+## Cod-ai
+
 A minimal command-line AI coding assistant powered by the [Claude API](https://docs.claude.com/).
 
 Cod-ai gives you a terminal chat with Claude that's aware of a working
