@@ -34,3 +34,8 @@ ENV/
 *.swp
 .DS_Store
 Thumbs.db
+
+# MOOC platform local data
+var/
+*.db
+*.sqlite3

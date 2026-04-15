@@ -26,16 +26,25 @@ classifiers = [
 dependencies = [
     "anthropic>=0.40.0",
     "python-dotenv>=1.0.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sqlalchemy>=2.0",
+    "pydantic>=2.7",
+    "pydantic[email]>=2.7",
+    "python-multipart>=0.0.9",
+    "jinja2>=3.1",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
+    "httpx>=0.27",
     "ruff>=0.6",
 ]
 
 [project.scripts]
 cod-ai = "cod_ai.cli:main"
+mooc-platform = "mooc.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/alkatery/Cod-ai"
@@ -50,3 +59,4 @@ target-version = "py310"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
